@@ -1,0 +1,93 @@
+/* Smooth overall feel */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body upgrade */
+body {
+  padding: 20px;
+  background: linear-gradient(-45deg, #f4f4f4, #e8f0ff, #fef6ff);
+  background-size: 400% 400%;
+  animation: bgMove 12s ease infinite;
+  color: #333;
+}
+
+/* Background animation */
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Input upgrade */
+input {
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+}
+
+/* Button modern look */
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.4);
+}
+
+/* Generic div card style (job board feel) */
+div {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+div:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  div {
+    padding: 12px;
+  }
+}
